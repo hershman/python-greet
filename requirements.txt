@@ -1,0 +1,11 @@
+Flask==0.9
+Flask-SQLAlchemy==0.16
+Jinja2==2.6
+PIL==1.1.6
+SQLAlchemy==0.7.9
+Werkzeug==0.8.3
+distribute==0.6.30
+numpy==1.4.1
+psycopg2==2.4.5
+pywin32==214
+virtualenv==1.5.1

@@ -9,7 +9,7 @@ class FlaskWithHamlish(Flask):
 
 
 app = FlaskWithHamlish(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 app.jinja_env.hamlish_mode = 'indented' # if you want to set hamlish settings
 db = SQLAlchemy(app)
 #debug/log settings
