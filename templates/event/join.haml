@@ -1,0 +1,16 @@
+-extends "layout.haml"
+-block title << Make an event
+
+-from "_formhelpers.haml" import render_field
+-block content:
+  %form method="post" action="{{ url_for("event_join", event_id=event_id) }}"
+    %dl
+      {{ render_field(form.image) }}
+    %dl
+      {{ render_field(form.tag1) }}
+    %dl
+      {{ render_field(form.tag2) }}
+    %dl
+      {{ render_field(form.tag3) }}
+    %p
+      %input type="submit" value="Make Event"

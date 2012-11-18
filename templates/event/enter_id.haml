@@ -1,0 +1,14 @@
+-extends "layout.haml"
+-block title << Enter Event ID
+
+-from "_formhelpers.haml" import render_field
+-block content:
+  %form method="post" action="{{ url_for("enter_eventid") }}"
+    %dl
+      {{ render_field(form.name) }}
+    %p
+      %input type="submit" value="Enter EventID"
+  %p
+    Or
+    %a href="{{url_for("new_event")}}"
+      make a new event
