@@ -1,0 +1,48 @@
+body{
+  font-family: Helvetica Neue, Helvetica, Arial, Tahoma, sans-serif;
+  text-align: center;
+}
+
+a, a:visited{
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #00dea5;
+  border-radius: 4px;
+}
+
+h1{
+  margin-top: 20px;
+  color: #00DEA5;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.main_logo{
+  display: block;
+  margin: 0 auto;
+}
+
+.signup_button{
+  margin-right: 15px;
+}
+
+.login_buttons, .tagline{
+    margin-top: 20px;
+}
+
+.centered{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tagline{
+  font-weight: bold;
+  color: #00dea5;
+}
+
+.user_image{
+  height: 125px;
+  width: 125px;
+}

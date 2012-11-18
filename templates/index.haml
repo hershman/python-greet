@@ -1,0 +1,12 @@
+-extends "layout.haml"
+-block title << Home
+
+-block content:
+  %h1
+    %img.main_logo src="/static/img/logo2.jpg"
+  %h2.tagline << Meet the right people
+  %div.login_buttons
+    %a.btn.signup_button href="{{ url_for("sign_up") }}"
+      Sign up
+    %a.btn.login_button href="{{ url_for("log_in") }}"
+      Login
